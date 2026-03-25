@@ -42,10 +42,15 @@
   <div class="grid-item-8"><a href="Musei.html" rel="noopener noreferrer" class="link-rettangolo"><div class="rettangolo-smussato1">Musei<img class="immagini-foto" src="img/MNPELP.jpg" alt=""/></div></div></a>
 	</div>
 
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    // Invece di DOMContentLoaded, usiamo window.onload
+    // Questo assicura che lo script parta SOLO quando l'immagine è fisicamente caricata
+    window.onload = function() {
+        console.log("Mappa caricata, avvio il ridimensionamento...");
         imageMapResize();
-    });
+    };
+</script>
 </body>
 </html>
