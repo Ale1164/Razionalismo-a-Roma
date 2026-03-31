@@ -235,5 +235,6 @@ li a:hover, .dropdown:hover .dropbtn {
 
   .titolo {
     font-size: 300%;
+	padding-top: 20%;
   }
 }
