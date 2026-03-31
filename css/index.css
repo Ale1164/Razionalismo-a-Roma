@@ -141,3 +141,34 @@ li a:hover, .dropdown:hover .dropbtn {
 	font-weight: 700;
 }
 /*End of Footer*/
+
+/* ── RESPONSIVE: Mobile ── */
+@media (max-width: 768px) {
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .grid-item-1, .grid-item-2 {
+    grid-row: auto;
+    grid-column: 1 / -1;
+  }
+
+  .grid-item-1 { order: 1; }
+  .grid-item-2 { order: 2; }
+
+  .img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .testo {
+    font-size: 110%;
+  }
+
+  .titolo {
+    font-size: 300%;
+	margin-top: 22%;
+  }
+}
